@@ -126,22 +126,12 @@
       color: #9b5eff;
       margin-bottom: 1rem;
     }
-    .contact input, .contact textarea {
+    .contact iframe {
       width: 100%;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background: #111;
-      border: 1px solid #9b5eff44;
-      color: white;
-      border-radius: 0.5rem;
-    }
-    .contact button {
-      background: #9b5eff;
+      max-width: 640px;
+      height: 686px;
       border: none;
-      padding: 1rem 2rem;
-      border-radius: 0.5rem;
-      color: white;
-      cursor: pointer;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -211,12 +201,7 @@
 
   <section class="contact">
     <h2>Have a query or want to connect?</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBjQpN8-1F52ZbcYxx15JOzOaBCXPHEu-i-QIJEVRjWjEE-g/viewform?embedded=true" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
 </body>
 </html>
