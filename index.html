@@ -3,210 +3,276 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hi, I'm Divyansh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0e0e12, #1c1c26);
-      color: white;
-      overflow-x: hidden;
-    }
-    header {
-      padding: 2rem 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .nav-links a {
-      margin-left: 2rem;
-      color: #aaa;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 5% 5% 2%;
-      text-align: center;
-    }
-    .hero h1 { font-size: 3rem; }
-    .hero span { color: #9b5eff; }
-    .hero p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #ccc;
-      max-width: 600px;
-    }
-    .setup {
-      margin-top: 3rem;
-      padding: 2rem;
-    }
-    .setup img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-    }
-    .roles {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 4rem 0;
-      gap: 2rem;
-    }
-    .role-box {
-      background: #1a1a2e;
-      border: 2px solid #9b5eff44;
-      border-radius: 1rem;
-      padding: 2rem;
-      text-align: center;
-      flex: 1 1 250px;
-      transition: 0.3s;
-    }
-    .role-box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #9b5eff88;
-    }
-    .role-box img {
-      width: 60px;
-      margin-bottom: 1rem;
-    }
-    .timeline {
-      padding: 4rem 5%;
-      position: relative;
-    }
-    .timeline-item {
-      margin-bottom: 3rem;
-      border-left: 3px solid #9b5eff44;
-      padding-left: 1.5rem;
-      position: relative;
-    }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -9px;
-      width: 16px;
-      height: 16px;
-      background: #9b5eff;
-      border-radius: 50%;
-    }
-    .timeline h3 { color: #9b5eff; }
-    .timeline p, .projects p {
-      color: #ccc;
-      margin-top: 0.5rem;
-    }
-    .projects {
-      padding: 2rem 5%;
-    }
-    .projects a {
-      display: block;
-      color: #9b5eff;
-      margin: 0.5rem 0;
-      text-decoration: none;
-    }
-    .contact {
-      background: #1a1a2e;
-      padding: 3rem 5%;
-      text-align: center;
-    }
-    .contact h2 {
-      color: #9b5eff;
-      margin-bottom: 1rem;
-    }
-    .confirmation-msg {
-      color: #4cff4c;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-      font-weight: 500;
-      display: none;
-    }
-    .contact iframe {
-      width: 100%;
-      max-width: 640px;
-      height: 686px;
-      border: none;
-      border-radius: 8px;
-    }
-  </style>
-  <script>
-    window.addEventListener("message", (e) => {
-      if (e.origin.includes("google.com") && e.data === "submit") {
-        document.getElementById("confirmation").style.display = "block";
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-      }
-    });
-  </script>
+  <title>Hi, I'm Divyansh | Advanced Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div style="font-weight: bold; font-size: 1.5rem; color: #9b5eff;">Divyansh | DevZone</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#timeline">Timeline</a>
+  <!-- 3D Background Elements -->
+  <div class="bg-animation">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
     </div>
-  </header>
+    <div class="particles" id="particles"></div>
+  </div>
 
-  <section class="hero">
-    <h1>Hi, I'm <span>Divyansh</span></h1>
-    <p>A passionate programmer and a consistent learner who grows by building and breaking real-world projects. I believe in polishing my skills through hands-on experiences.</p>
-    <div class="setup">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Developer Logo" />
-    </div>
-  </section>
-
-  <section class="roles">
-    <div class="role-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
-      <h3>Python Developer</h3>
-    </div>
-    <div class="role-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" />
-      <h3>MySQL (Advanced)</h3>
-    </div>
-    <div class="role-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
-      <h3>JavaScript (Intermediate)</h3>
-    </div>
-    <div class="role-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML/CSS" />
-      <h3>HTML & CSS (Intermediate)</h3>
-    </div>
-  </section>
-
-  <section class="timeline" id="timeline">
-    <div class="timeline-item">
-      <h3>Class 6 - The Beginning</h3>
-      <p>My journey into the world of computers and programming started in Class 6, where curiosity drove me to explore how software really works.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Class 7 - First Inter-Branch Experience</h3>
-      <p>I switched my branch in Class 7, which opened my mind to new environments and challenges, further fueling my interest in coding and development.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Class 11 - Passion Evolves</h3>
-      <p>Once again, I shifted my branch, solidifying my direction toward Computer Science. I explored advanced topics and laid the groundwork for real development.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Class 12 - Project Developer</h3>
-      <p>I created two major projects using Python and MySQL. Feel free to explore them below:</p>
-      <div class="projects">
-        <a href="https://github.com/div-yan-sh/Banking_Management" target="_blank">🔗 Banking Management System</a>
-        <a href="https://github.com/div-yan-sh/Toll_Management" target="_blank">🔗 Toll Management System</a>
+  <!-- Floating Navigation -->
+  <nav class="floating-nav" id="floating-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-text">Divyansh</span>
+        <span class="brand-accent">| DevZone</span>
       </div>
-      <p>I also guided several classmates in building their own systems.</p>
+      <div class="nav-links">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#timeline" class="nav-link" data-section="timeline">Timeline</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
     </div>
-  </section>
+  </nav>
 
-  <section class="contact">
-    <h2>Have a query or want to connect?</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBjQpN8-1F52ZbcYxx15JOzOaBCXPHEu-i-QIJEVRjWjEE-g/viewform?embedded=true" allow="fullscreen">Loading…</iframe>
-    <div id="confirmation" class="confirmation-msg">
-      ✅ Your message has been submitted successfully. I'll get back to you shortly!
+  <!-- Loading Animation -->
+  <div class="loader" id="loader">
+    <div class="loader-cube">
+      <div class="cube-face cube-front"></div>
+      <div class="cube-face cube-back"></div>
+      <div class="cube-face cube-left"></div>
+      <div class="cube-face cube-right"></div>
+      <div class="cube-face cube-top"></div>
+      <div class="cube-face cube-bottom"></div>
     </div>
-  </section>
+    <div class="loader-text">Loading Experience...</div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content" class="hidden">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Hi, I'm</span>
+            <span class="title-name" id="typed-name">Divyansh</span>
+          </h1>
+          <p class="hero-description" id="typed-description">
+            A passionate programmer and a consistent learner who grows by building and breaking real-world projects. I believe in polishing my skills through hands-on experiences.
+          </p>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-container">
+            <div class="avatar-ring"></div>
+            <div class="avatar-glow"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Divyansh - Developer" class="avatar-image" />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">Technical</span> Expertise
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="python">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="skill-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+                </div>
+                <h3>Python Developer</h3>
+                <div class="skill-level">Advanced</div>
+              </div>
+              <div class="card-back">
+                <h3>Python Mastery</h3>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="90"></div>
+                </div>
+                <p>Expert in backend development, data structures, and automation</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="mysql">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="skill-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" />
+                </div>
+                <h3>MySQL</h3>
+                <div class="skill-level">Advanced</div>
+              </div>
+              <div class="card-back">
+                <h3>Database Expert</h3>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="85"></div>
+                </div>
+                <p>Advanced query optimization and database design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="javascript">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="skill-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="card-back">
+                <h3>Frontend Dynamics</h3>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="75"></div>
+                </div>
+                <p>Interactive web applications and modern ES6+</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="web">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="skill-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML/CSS" />
+                </div>
+                <h3>HTML & CSS</h3>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="card-back">
+                <h3>Web Foundations</h3>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="80"></div>
+                </div>
+                <p>Responsive design and modern CSS techniques</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">Journey</span> Timeline
+        </h2>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Class 6 - The Beginning</h3>
+                  <span class="timeline-year">2018</span>
+                </div>
+                <p>My journey into the world of computers and programming started in Class 6, where curiosity drove me to explore how software really works.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Class 7 - First Inter-Branch Experience</h3>
+                  <span class="timeline-year">2019</span>
+                </div>
+                <p>I switched my branch in Class 7, which opened my mind to new environments and challenges, further fueling my interest in coding and development.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Class 11 - Passion Evolves</h3>
+                  <span class="timeline-year">2021</span>
+                </div>
+                <p>Once again, I shifted my branch, solidifying my direction toward Computer Science. I explored advanced topics and laid the groundwork for real development.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="timeline-marker">
+              <div class="marker-inner"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Class 12 - Project Developer</h3>
+                  <span class="timeline-year">2022</span>
+                </div>
+                <p>I created two major projects using Python and MySQL. Feel free to explore them below:</p>
+                <div class="projects-list">
+                  <a href="https://github.com/div-yan-sh/Banking_Management" target="_blank" class="project-link">
+                    <span class="project-icon">🏦</span>
+                    Banking Management System
+                  </a>
+                  <a href="https://github.com/div-yan-sh/Toll_Management" target="_blank" class="project-link">
+                    <span class="project-icon">🛣️</span>
+                    Toll Management System
+                  </a>
+                </div>
+                <p class="timeline-additional">I also guided several classmates in building their own systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">Let's</span> Connect
+        </h2>
+        <p class="contact-subtitle">Have a query or want to connect?</p>
+        
+        <div class="contact-form-container">
+          <div class="form-decoration"></div>
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdBjQpN8-1F52ZbcYxx15JOzOaBCXPHEu-i-QIJEVRjWjEE-g/viewform?embedded=true" 
+            class="contact-form"
+            allow="fullscreen">
+            Loading…
+          </iframe>
+        </div>
+        
+        <div id="confirmation" class="confirmation-msg hidden">
+          <div class="confirmation-icon">✅</div>
+          <p>Your message has been submitted successfully. I'll get back to you shortly!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
